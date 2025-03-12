@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="product.css">
+     <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Product Listing</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" data-category="women's clothing">Women</a></li>
+                <li><a href="#" data-category="men's clothing">Men</a></li>
+                <li><a href="#" data-category="electronics">Electronics</a></li>
+                <li><a href="#" data-category="jewelery">Jewelery</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Search products...">
+    </header>
+    <main>
+        <div id="filters">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="">All</option>
+            </select>
+            
+            <label for="sort">Sort by Price:</label>
+            <select id="sort">
+                <option value="">Select</option>
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="1000" step="50">
+        </div>
+        
+        <div id="product-list" class="products"></div>
+        <button id="load-more">Load More</button>
+        <div id="loading" class="loading">Loading...</div>
+    </main>
+    
+    <script src="product.js"></script>
+     
+</body>
+</html>
