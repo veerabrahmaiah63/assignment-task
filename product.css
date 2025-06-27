@@ -1,5 +1,4 @@
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
     background: #fff;
     padding: 20px;
@@ -47,7 +45,7 @@ h1 {
     color: #0056b3;
 }
 
-/* Filters Section */
+
 #filters {
     background: #fff;
     padding: 15px;
@@ -65,7 +63,7 @@ select, input[type="text"], input[type="range"] {
     border-radius: 5px;
 }
 
-/* Product Grid */
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -93,7 +91,7 @@ select, input[type="text"], input[type="range"] {
     border-radius: 5px;
 }
 
-/* Load More Button */
+
 #load-more {
     background: #007bff;
     color: white;
@@ -111,7 +109,7 @@ select, input[type="text"], input[type="range"] {
     background: #0056b3;
 }
 
-/* Loading Indicator */
+
 .loading {
     text-align: center;
     font-size: 18px;
@@ -119,21 +117,7 @@ select, input[type="text"], input[type="range"] {
     display: none;
 }
 
-/* Responsive Design
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    #filters {
-        flex-direction: column;
-        gap: 10px;
-    }
-} */
+
  /* Responsive Design - Mobile */
 @media (max-width: 480px) {
     header {
